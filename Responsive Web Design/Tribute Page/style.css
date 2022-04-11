@@ -7,9 +7,7 @@
     padding: 0;
 }
 
-body {
-    background: linear-gradient(rgb(182, 182, 241), rgb(245, 177, 177));
-}
+body {background: linear-gradient(rgb(182, 182, 241), rgb(245, 177, 177));}
 
 #main {
     font-family: "Fira Code", monospace;
@@ -25,7 +23,6 @@ body {
 
 #title {
     font-size: 65px;
-
     text-align: center;
 }
 
@@ -33,6 +30,7 @@ body {
     font-size: 20px;
     text-align: center;
 }
+
 #img-div {
     display: flex;
     flex-direction: column;
@@ -40,7 +38,7 @@ body {
 }
 
 #image {
-    width: 650px;
+    width: 100%;
     height: auto;
     margin: 40px 0 25px 0;
 
@@ -71,4 +69,10 @@ hr {
     margin: 0 auto 50px auto;
     border-radius: 30px;
     width: 80%;
+}
+
+@media (max-width: 550px) {
+    body {font-size: 10px;}
+    #main {padding: 40px 40px;}
+    #title {font-size: 30px;}
 }
