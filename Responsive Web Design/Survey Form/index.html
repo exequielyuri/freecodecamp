@@ -20,18 +20,19 @@
     <form id="survey-form">
 
         <label id="name-label" for="name">Name</label>
-        <input id="name" type="text" placeholder="Enter your name">
+        <input id="name" type="text" placeholder="Enter your name" required>
 
         <label id="email-label" for="email">Email</label>
-        <input id="email" type="email" placeholder="Enter your Email">
+        <input id="email" type="email" placeholder="Enter your Email" required>
         
         <label id="number-label" for="number">Age</label>
-        <input id="number" type="number" min="10" max="99" placeholder="Age">
+        <input id="number" type="number" min="10" max="99" placeholder="Age" required>
 
         <label id="dropdown-label" for="dropdown">
             Which option best describes your current role?
         </label>
-        <select id="dropdown" placeholder="Select current role">
+        <select id="dropdown" required>
+            <option value="" selected hidden>Select current role</option>
             <option value="student">Student</option>
             <option value="full-time-job">Full Time Job</option>
             <option value="full-time-learner">Full Time Learner</option>
@@ -43,7 +44,7 @@
             <legend>Would you recommend freeCodeCamp to a friend?</legend>
 
             <label for="definitely">
-                <input id="definitely" type="radio" name="recommend" value="definitely">Definitely
+                <input id="definitely" type="radio" name="recommend" value="definitely" checked>Definitely
             </label>
             
             <label for="maybe">
