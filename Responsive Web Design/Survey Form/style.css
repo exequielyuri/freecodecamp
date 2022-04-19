@@ -8,8 +8,19 @@ body {
 
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
     align-items: center;
+
+    color: black;
+    font-family: "Quicksand";
+    background-image: url("https://i.pinimg.com/736x/f3/ed/ee/f3edeef287ab6c4ea59b9c971a410f47.jpg");
+}
+
+#title,
+#description {
+    background-image: linear-gradient(45deg, rgb(168, 139, 235), rgba(248, 206, 236, 0.85));
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 3px 25px;
 }
 
 #description {
@@ -18,14 +29,16 @@ body {
 }
 
 #survey-form {
-    max-width: 650px;
+    width: 650px;
     display: flex;
     flex-direction: column;
 
-    padding: 35px;
-    background-color: grey;
+    padding: 50px 50px 0px 50px;
+    background-image: linear-gradient(45deg, rgb(168, 139, 235), rgba(248, 206, 236, 0.85));
+    /* background-color: rgba(216, 247, 255, 0.8); */
+    border-radius: 5px;
 
-    
+    color: white;
 }
 
 fieldset,
@@ -41,8 +54,9 @@ fieldset,
 input[type='text'],
 input[type='number'],
 select {
-    height: 30px;
-    padding-left: 10px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
 }
 
 fieldset {
