@@ -90,6 +90,15 @@ fieldset input {
     background-color: transparent;
 }
 
+#comments {
+    padding: 10px;
+    font-family: "Quicksand", monospace;
+    font-size: 15px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+}
+
 #submit:hover {
     animation-name: spread;
     animation-duration: 0.8s;
