@@ -21,11 +21,12 @@ body {
     border-radius: 5px;
     color: rgb(255, 255, 255);
     padding: 3px 25px;
+    font-size: 40px;
 }
 
 #description {
     margin: 10px 0 30px 0;
-
+    font-size: 20px;
 }
 
 #survey-form {
@@ -39,6 +40,8 @@ body {
     border-radius: 5px;
 
     color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 fieldset,
@@ -52,14 +55,32 @@ fieldset,
 }
 
 input[type='text'],
+input[type='email'],
 input[type='number'],
 select {
     height: 40px;
     padding: 0 10px;
     border-radius: 5px;
+
+    font-size: 18px;
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+    font-weight: 500;
+}
+
+fieldset input {
+    margin-right: 5px;
 }
