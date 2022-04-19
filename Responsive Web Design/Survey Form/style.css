@@ -18,10 +18,34 @@ body {
 }
 
 #survey-form {
-    max-width: 450px;
+    max-width: 650px;
     display: flex;
     flex-direction: column;
 
     padding: 35px;
     background-color: grey;
+
+    
+}
+
+fieldset,
+#name, 
+#email,
+#number,
+#dropdown,
+#comments,
+#submit {
+    margin: 0 0 30px 0;
+}
+
+input[type='text'],
+input[type='number'],
+select {
+    height: 30px;
+    padding-left: 10px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
 }
