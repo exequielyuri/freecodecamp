@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,26 +14,103 @@
 <body>
     <header id="header">
         <img id="header-img" src="http://drive.google.com/uc?export=view&id=17yOJR2x7IKvYLG2v4YEX2f3NkxVa_dx2">
+        
         <nav id="nav-bar">
-            <a class="nav-link"></a>
-            <a class="nav-link"></a>
-            <a class="nav-link"></a>
+            <a class="nav-link" href="#video">Trailer</a>
+            <a class="nav-link" href="#highlight">Features</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
         </nav>
     </header>
 
-    <video id="video" controls loop muted>
-        <source src="https://www.pexels.com/video/3818213/download/?search_query=&tracking_id=uipr0co3lig" type="video/mp4">
-    </video>
+    <div id="content">
+        <video id="video" controls loop muted>
+            <source src="https://www.pexels.com/video/3818213/download/?search_query=&tracking_id=uipr0co3lig" type="video/mp4">
+        </video>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" placeholder="Enter your email here" name="email">
+            <input id="submit" type="submit" value="Enter">
+        </form>
+        <div id="highlight">
+            <div class="item">
+                <img class="icon">
+                <div class="description">
+                    <div class="keyword">
+                        Comfy
+                    </div>
+                    <div class="context">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit rem excepturi, a sapiente, nostrum voluptas laborum at deleniti ratione ullam non esse ducimus hic expedita aut aliquid dolore nulla?
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="icon">
+                <div class="description">
+                    <div class="keyword">
+                        Warm
+                    </div>
+                    <div class="context">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor et nostrum reprehenderit possimus numquam. Architecto perferendis ab, incidunt repudiandae veritatis cupiditate nisi tempora nobis corrupti quidem fugiat, aliquam, magni quasi.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="icon">
+                <div class="description">
+                    <div class="keyword">
+                        Peaceful
+                    </div>
+                    <div class="context">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi similique exercitationem quod sunt debitis saepe! Nihil maxime ullam sed, quo unde facilis quia? Facilis pariatur commodi veniam voluptatem. Reiciendis.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pricing">
+            <div class="plan">
+                <div class="label">Simple</div>
+                <div class="cost">$324.99</div>
+                <div class="feature">Lorem ipsum</div>
+                <div class="feature">Lorem ipsum</div>
+                <div class="feature">Lorem ipsum</div>
+                <div class="feature">Lorem ipsum</div>
+                <button>Cool</button>
+            </div>
+            <div class="plan">
+                <div class="label">Gold</div>
+                <div class="cost">$500</div>
+                <div class="feature">Lorem ipsum</div>
+                <div class="feature">Lorem ipsum</div>
+                <div class="feature">Lorem ipsum</div>
+                <div class="feature">Lorem ipsum</div>
+                <button>Cool</button>
+            </div>
+            <div class="plan">
+                <div class="label">Deluxe</div>
+                <div class="cost">$700</div>
+                <div class="feature">Lorem ipsum</div>
+                <div class="feature">Lorem ipsum</div>
+                <div class="feature">Lorem ipsum</div>
+                <div class="feature">Lorem ipsum</div>
+                <button>Cool</button>
+            </div>
+        </div>
+    </div>
 
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" type="email" placeholder="Enter your email here" name="email">
-        <input id="submit" type="submit" value="Enter">
-    </form>
+    <footer>
+        <div id="links">
+            <a class="nav-link">Privacy</a>
+            <a class="nav-link">Terms</a>
+            <a class="nav-link">Contact</a>
+        </div>
+        <div id="copyright">
+            Copyright 2022, Houzo
+        </div>
+    </footer>
 </body>
 </html>
 
 <!--
-TODO
+TODO:
 (2) company logo
 (5) working links
 (6) add a vid link
